@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>基金详情</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="HandheldFriendly" content="true"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+</head>
+<body>
+<span id="ruler"></span>
+<div class="container">
+  <div class="fund-marquee-div j-marquee-notice-div">
+  </div>
+  <marquee class="fund-marquee j-marquee-notice">
+  </marquee>
+  <div class="i-card">
+    <div class="fund-summary normal-fund">
+      <div class="summary-item no-flex">
+        <div class="title">年涨幅</div>
+        <div class="item-value large">
+          <span class="value-operator xs"></span><span id="changeByYear">--</span><span class="xs">%</span>
+        </div>
+      </div>
+      <div class="summary-item no-flex">
+        <div class="title">日涨幅</div>
+        <div class="item-value">
+          <span class="value-operator xs"></span><span id="changeByDay">--</span><span class="xs">%</span>
+        </div>
+      </div>
+      <div class="summary-item no-flex">
+        <div class="title">最新净值</div>
+        <div class="item-value" id="price">0</div>
+      </div>
+    </div>
+    <div class="fund-summary money-fund">
+      <div class="summary-item">
+        <div class="title">七日年华收益</div>
+        <div class="item-value large">
+          <span class="value-operator xs"></span><span id="rateOfReturn">--</span><span class="xs">%</span>
+        </div>
+      </div>
+      <div class="summary-item">
+        <div class="title">万份收益</div>
+        <div class="item-value large" id="returns"></div>
+      </div>
+    </div>
+    <div class="update-time">更新于<span id="updateTime">
+      <span class="tofu"></span>
+      <span class="tofu"></span>
+      -
+      <span class="tofu"></span>
+      <span class="tofu"></span>
+    </span></div>
+    <div class="fund-type-summary">
+      <i class="risk-icon">
+        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M7 2v11h3v9l7-12h-4l4-8z"></path>
+        </svg>
+      </i>
+      <span class="risk-type" id="riskType">
+        <span class="tofu"></span>
+        <span class="tofu"></span>
+        <span class="tofu"></span>
+      </span>
+      <span class="fund-type" id="fundType">
+        <span class="tofu"></span>
+        <span class="tofu"></span>
+        <span class="tofu"></span>
+      </span>
+    </div>
+  </div>
+
+  <div class="i-card valueTrend">
+    <ul class="i-card-tabs-nav normal-fund">
+      <li class="active"><a href="#trendTab" data-tab-name="valueTrend">净值走势</a></li>
+      <li><a href="#historyTab" data-tab-name="historyValue">历史净值</a></li>
+    </ul>
+    <div class="money-fund-title money-fund">七日年化走势</div>
+    <div id="trendTab">
+      <div class="button-group">
+        <button type="button" data-day-number="30" class="active">月涨幅</button>
+        <button type="button" data-day-number="90">季涨幅</button>
+        <button type="button" data-day-number="180">半年涨幅</button>
+        <button type="button" data-day-number="365">年涨幅</button>
+      </div>
+      <div class="trend-table" id="trendTable"></div>
+      <div class="history-summary normal-fund">
+        <header>
+          <h3>历史业绩</h3>
+        </header>
+        <section>
+          <div class="summary-item">
+            <div class="item-value">
+              <span class="value-operator"></span><span id="changeByMonth">--</span>%
+            </div>
+            <div class="title">近1月</div>
+          </div>
+          <div class="summary-item">
+            <div class="item-value">
+              <span class="value-operator"></span><span id="changeBy3Month">--</span>%
+            </div>
+            <div class="title">近3月</div>
+          </div>
+          <div class="summary-item">
+            <div class="item-value">
+              <span class="value-operator"></span><span class="j-change-by-year">--</span>%
+            </div>
+            <div class="title">近1年</div>
+          </div>
+          <div class="summary-item">
+            <div class="item-value">
+              <span class="value-operator"></span><span id="change">--</span>%
+            </div>
+            <div class="title">成立以来</div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="historyTab" style="display: none"></div>
+  </div>
+
+  <ul class="lists i-card">
+    <li>
+      <div class="title">基金经理</div>
+      <div class="list-item-content j-mgr-list"></div>
+    </li>
+    <li>
+      <div class="title">基金详情</div>
+      <div class="list-item-content" id="detailsButton">基金信息、资产配置 &gt;</div>
+    </li>
+    <li>
+      <div class="title">最新规模</div>
+      <div class="list-item-content j-last-assets"></div>
+    </li>
+    <li>
+      <div class="title">成立时间</div>
+      <div class="list-item-content j-setup-date"></div>
+    </li>
+  </ul>
+
+  <ul class="lists i-card">
+    <li>
+      <div>交易费率</div>
+      <div class="list-item-content" id="brokerageButton">申购费率<span class="j-trade-rate">0%</span> &gt;</div>
+    </li>
+    <li class="normal-fund">
+      <ul class="sub-list">
+        <li>
+          <div class="title">余额宝申购</div>
+          <div class="list-item-content">
+            最低 <span class="discount j-yeb-discount">%</span>
+          </div>
+        </li>
+        <li>
+          <div class="title">通联渠道申购</div>
+          <div class="list-item-content">
+            最低 <span class="discount j-tl-discount">%</span>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="consult i-card">
+    <header>
+      <h2>产品咨询</h2>
+      <span id="toConsultPage"><span id="totalConsultsNo"></span>条咨询 &gt;</span>
+    </header>
+    <div id="consultContent"></div>
+  </div>
+</div>
+<div class="i-spinner">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <div class="bar4"></div>
+  <div class="bar5"></div>
+  <div class="bar6"></div>
+  <div class="bar7"></div>
+  <div class="bar8"></div>
+  <div class="bar9"></div>
+  <div class="bar10"></div>
+  <div class="bar11"></div>
+  <div class="bar12"></div>
+</div>
+<div class="bottom-bar">
+  <div class="align-center">余额宝申购费率 <span class="original-rate j-trade-rate">-%</span> <span class="j-yeb-discount">-%</span> <span>详情 &gt;</span></div>
+  <div class="bottom-details" id="bottomDetail">
+
+  </div>
+</div>
+<div class="no-content" id="noContent">
+  <div>该产品详情可去天弘基金官网查询哦</div>
+</div>
+</body>
+</html>

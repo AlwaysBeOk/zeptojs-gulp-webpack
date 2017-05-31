@@ -1,0 +1,28 @@
+<div>
+  <span class="tpl-icon-wrapper" style="background:url('{{=it.icon}}');"></span>
+
+  <p class="welfare-type">{{=it.type}}</p>
+  <p class="welfare-name">{{=it.name}}</p>
+  <p class="welfare-validity"><span class="title">有效期：</span><span class="content">{{=it.validity}}</span></p>
+  <p><span class="title">发放日期：</span><span class="content">{{=it.release}}</span></p>
+  <!-- 未领取 -->
+  <div id="getCDKeyWrapper">
+    <a class="welfare-get" href="javascript:;">立即领取</a>
+    <p class="welfare-explain">*限本月内领取</p>
+  </div>
+  <!-- 已领取 -->
+  <div class="welfare-CDKey" id="CDKeyWrapper">
+    <span>兑换码：</span>
+    <span class="CDKey">{{=it.CDKey}}</span>
+  </div>
+  <!-- 已过期 -->
+  <div class="welfare-past-wrapper" id="welfarePast">
+    <a class="welfare-past" href="javascript:;">已过期</a>
+  </div>
+  <ul>
+    {{~it.tips:item:index}}
+    <li><span>·</span>{{=item}}</li>
+    {{~}}
+  </ul>
+  <p class="welfare-question"><a href="javascript:;">我有疑问？</a></p>
+</div>

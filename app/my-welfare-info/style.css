@@ -1,0 +1,133 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  background: #38ACFF;
+  overflow: hidden;
+  font-family: 'sans-serif';
+}
+
+.welfare-info-wrapper{
+  height: 100%;
+  padding: 1rem .2rem .4rem;
+  position: relative;
+}
+.welfare-info-wrapper .welfare-info-content .tpl-icon-wrapper{ /* icon */
+  width: 1rem;
+  height: 1rem;
+  background-size: 100%!important;
+  position: absolute;
+  top: -.5rem;
+  left: 50%;
+  margin-left: -.5rem;
+  z-index:100;
+  border-radius: 50%;
+  display: block;
+}
+.welfare-info-wrapper .welfare-info-content{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: .5rem .3rem .2rem;
+  border-radius: .04rem;
+  position: relative;
+}
+.welfare-info-content p{
+  margin-top: .3rem;
+}
+.welfare-info-content .welfare-type{
+  color: #999;
+  font-size: .26rem;
+  text-align: center;
+}
+.welfare-info-content .welfare-name{
+  color: #333;
+  font-size: .4rem;
+  text-align: center;
+  margin-top: .3rem;
+}
+.welfare-info-content .welfare-validity{
+  margin-top: 1rem;
+}
+span.title{
+  color: #999;
+  display: inline-block;
+  width: 1.8rem;
+}
+span.content{
+  color: #444;
+}
+
+.welfare-info-content .welfare-get{
+  display: inline-block;
+  color: #fff;
+  width: 100%;
+  height: 1rem;
+  margin-top: .4rem;
+  background: #00a4f5;
+  text-align: center;
+  line-height: 1rem;
+  text-decoration: none;
+  border-radius: .1rem;
+}
+.welfare-info-content .welfare-explain{
+  color: orange;
+  font-size: .26rem;
+}
+
+.welfare-info-content .welfare-CDKey{
+  display: none;
+  padding: .3rem 0;
+  margin-top: .3rem;
+  border-top: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.welfare-info-content .welfare-CDKey span {
+  color: #999;
+}
+.welfare-info-content .welfare-CDKey span.CDKey{
+  color: #00a4f5;
+  font-size: .45rem;
+}
+.welfare-info-content .welfare-past-wrapper{
+  display:none;
+  padding: .3rem 0;
+  margin-top: .3rem;
+  border-top: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.welfare-info-content .welfare-past-wrapper .welfare-past{
+  display: inline-block;
+  width: 100%;
+  height: 1rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+  text-decoration: none;
+  border-radius: .1rem;
+  background: #ccc;
+}
+
+.welfare-info-content ul{
+  padding: .24rem;
+}
+.welfare-info-content ul li{
+  font-size: .29rem;
+  color: #444;
+  margin-top: .2rem;
+  position: relative;
+}
+.welfare-info-content ul li span{
+  position: absolute;
+  left: -.23rem;
+}
+
+.welfare-info-content .welfare-question{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: .25rem;
+}
+.welfare-info-content .welfare-question a{
+  text-decoration: none;
+  color: #00a4f5;
+}

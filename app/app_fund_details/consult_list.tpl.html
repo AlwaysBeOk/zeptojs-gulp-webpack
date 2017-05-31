@@ -1,0 +1,15 @@
+<dl class="q-and-a">
+  {{~ it.groups :item :index}}
+  <dt>
+    <i class="q">问</i>
+    <span>{{= unescape(item.consultContent)}}</span>
+  </dt>
+  <dd>
+    <i class="a">答</i>
+    <div>
+      <div>{{= item.consultAnswer == null ? '等待回复中...' : item.consultAnswer}}</div>
+      <div class="answer-time">{{= it.dateFormat(item.createTime)}}</div>
+    </div>
+  </dd>
+  {{~}}
+</dl>

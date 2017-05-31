@@ -1,0 +1,180 @@
+.total-salary{
+  background-color: #38ADFF;
+  color:#FFFFFF;
+}
+.total-salary .payrolls-time{
+  height: 30px;
+  line-height: 30px;
+  padding-top: 30px;
+  text-align: center;
+  box-sizing: content-box;
+}
+.total-salary .payrolls-time .eyes{
+  display: inline-block;
+}
+.total-salary .payrolls-time .eyes_close,.total-salary .payrolls-time .eyes_open{
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  line-height: 18px;
+}
+.total-salary .payrolls-time .toggle_eyes{
+  display: none;
+}
+.total-salary .payrolls-money{
+  text-align: center;
+  height: 68px;
+  font-size: 60px;
+  line-height: 68px;
+  padding: 20px 0 40px 0;
+  box-sizing: content-box;
+}
+.total-salary .payrolls-money-toggle{
+  display: none;
+}
+.total-salary .payrolls-money .decimals{
+  font-size: 34px;
+}
+.payrolls-detail .title{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px 0 24px;
+  color: #999999;
+  font-size: 14px;
+  border-bottom: 1px solid #E4E4E4;
+  position:relative;
+}
+.payrolls-detail .title:after{
+  content: "";
+  display: block;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background-color: #38ADFF;
+  position:absolute;
+  top: 18px;
+  left: 12px;
+}
+.payrolls-detail .payroll-item{
+  color: #222222;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 15px 0 0px;
+  margin-left: 24px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.payrolls-detail .payroll-item .question{
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #999999;
+  border-radius: 9px;
+  vertical-align: middle;
+  line-height: 18px;
+  text-align: center;
+  color: #999999;
+  margin-left: 4px;
+  margin-top: -1px;
+}
+.payrolls-detail .payroll-item .money_show{
+  display: block;
+  float: right;
+}
+.payrolls-detail .payroll-item .asterisk_show{
+  display: block !important;
+  float: right;
+}
+.payrolls-detail .payroll-item .asterisk_hide{
+  display: none;
+}
+.payrolls-detail .payroll-item .money_hide{
+  display: none !important;
+}
+.payrolls-detail .my_welfare{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px 0 24px;
+  font-size: 14px;
+  border-bottom: 1px solid #E4E4E4;
+  position:relative;
+}
+.payrolls-detail .my_welfare:after{
+  content: "";
+  display: block;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background-color: #38ADFF;
+  position:absolute;
+  top: 18px;
+  left: 12px;
+}
+.payrolls-detail .my_welfare span:nth-child(1){
+  float: left;
+  color: #F89E19;
+}
+.payrolls-detail .my_welfare span:nth-child(2){
+  float: right;
+  color: #999999;
+  font-size: 12px;
+}
+.remind{
+  height: 40px;
+  line-height: 40px;
+  color: #999999;
+  padding: 0 15px;
+  font-size:12px;
+}
+.buttons{
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  color: #38ADFF;
+  text-align: center;
+  position:fixed;
+  bottom: 0;
+  border-top: 1px solid #38ADFF;
+}
+.buttons .welfare{
+  width: 50%;
+  float: left;
+}
+.buttons .welfare span:nth-child(2){
+  position: relative;
+}
+.buttons .welfare .welfare_num{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 8px;
+  display: inline-block;
+  top: -6px;
+  right: -18px;
+  color: white;
+  font-size: 12px;
+  background-color: #F89E19;
+}
+.buttons .confirm{
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.buttons .confirm:before{
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 1px;
+  background-color: #eaeaea;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.buttons .icon_font{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  line-height: 20px;
+  margin-top: -2px;
+}

@@ -1,0 +1,100 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: 'sans-serif';
+}
+.my-welfare-history-wrapper{
+  width: 100%;
+  min-height: 100%;
+  padding: .3rem;
+  background: #EFEFF4;
+}
+
+/* template start */
+.welfare_card{
+  padding:.3rem .3rem .2rem;
+  margin-bottom: .3rem;
+  background: #fff;
+  position: relative;
+  box-shadow: 1px 1px .2rem #ccc;
+  border-radius: .05rem;
+}
+.welfare_card .card_bg{
+  width:1rem;
+  height:1rem;
+  background:url('./images/welfare_didi_.jpg') no-repeat;
+  background-size: cover;
+  float: left;
+}
+.welfare_card .card_type{
+  font-size:.26rem;
+  color:#999;
+  margin-top:.1rem;
+}
+.welfare_card .card_name{
+  font-size: .3rem;
+  color: #333;
+  font-weight: 500;
+  margin-top:.3rem;
+}
+.welfare_card .card_validity{
+  font-size: .26rem;
+  color: #999;
+  clear: both;
+  margin-top:.4rem;
+}
+.welfare_card .card_get{
+  text-decoration: none;
+  color: #ccc;
+  background: #fff;
+  font-size: .3rem;
+  line-height: .3rem;
+  padding: .12rem .4rem;
+  border: 1px solid #ccc;
+  border-radius: .1rem;
+  position: absolute;
+  top: .5rem;
+  right:.3rem;
+}
+/* template end */
+
+/* animate start */
+.welfare_animate .welfare_animate_history:nth-child(1) {
+   transform:translateY(50%);
+   opacity: 0;
+   animation:welfare-animate 0.2s forwards;
+   -webkit-animation:welfare-animate 0.2s forwards;
+ }
+.welfare_animate .welfare_animate_history:nth-child(2) {
+  transform:translateY(50%);
+  opacity: 0;
+  animation:welfare-animate 0.2s 0.2s forwards;
+  -webkit-animation:welfare-animate 0.2s 0.1s forwards;
+}
+.welfare_animate .welfare_animate_history:nth-child(3) {
+  transform:translateY(50%);
+  opacity: 0;
+  animation:welfare-animate 0.2s 0.4s forwards;
+  -webkit-animation:welfare-animate 0.2s 0.3s forwards;
+}
+.welfare_animate .welfare_animate_history:nth-child(4) {
+  transform:translateY(50%);
+  opacity: 0;
+  animation:welfare-animate 0.2s 0.6s forwards;
+  -webkit-animation:welfare-animate 0.2s 0.5s forwards;
+}
+.welfare_animate .welfare_animate_history:nth-child(5) {
+  transform:translateY(50%);
+  opacity: 0;
+  animation:welfare-animate 0.2s 0.8s forwards;
+  -webkit-animation:welfare-animate 0.2s 0.7s forwards;
+}
+@keyframes welfare-animate {
+  0%{transform:translateY(50%);opacity: 0}
+  100%{transform:translateY(0); opacity: 1}
+}
+@-webkit-keyframes welfare-animate {
+  0%{transform:translateY(50%); opacity: 0}
+  100%{transform:translateY(0); opacity: 1}
+}
+/* animate end */

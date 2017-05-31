@@ -1,0 +1,421 @@
+body {
+  color: #585858;
+  background: #f5f5f5;
+  font-size: 3.74vw;
+}
+
+#ruler {
+  position: fixed;
+  top: -100px;
+  white-space: nowrap;
+  font-size: 3.2vw;
+}
+
+.fund-marquee {
+  display: none;
+  background: #5baefc;
+  color: #fff;
+  font-size: 3.2vw;
+  padding: 1.5vw 3vw;
+}
+
+.fund-marquee-div {
+  display: none;
+  background: #5baefc;
+  color: #fff;
+  font-size: 3.2vw;
+  padding: 1.5vw 3vw;
+  overflow: hidden;
+}
+
+.lists > li {
+  display: flex;
+  padding: 4vw;
+  border-top: 1px solid #e5e5e5;
+}
+
+.lists > li:first-child {
+  border-top: none;
+}
+
+.list-item-content {
+  flex: 1;
+  color: #ccc;
+  text-align: right;
+}
+
+.sub-list {
+  flex: 1;
+  font-size: 3.2vw;
+}
+
+.sub-list > li {
+  display: flex;
+  margin-top: 2vw;
+}
+
+.sub-list > li:first-child {
+  margin-top: 0;
+}
+
+.lists .discount {
+  color: #ff4421;
+}
+
+.trend-table {
+  height: 250px;
+  padding-bottom: 4%;
+}
+
+.i-card-tabs-nav {
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.i-card-tabs-nav > li {
+  flex: 1;
+  margin-bottom: -1px;
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+
+.i-card-tabs-nav > li.active {
+  border-color: #60a5f3;
+}
+
+.i-card-tabs-nav a:link, .i-card-tabs-nav a:visited {
+  display: block;
+  padding: 3.2vw;
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+.i-card-tabs-nav > li.active a:link, .i-card-tabs-nav > li.active a:visited {
+  color: #60a5f3;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin: 4.8vw auto 2vw;
+}
+
+.button-group button {
+  padding: 2vw 4vw;
+  border: 0.27vw solid #e5e5e5;
+  border-right: none;
+  color: #ccc;
+  font-size: 3.2vw;
+  background: #fff;
+}
+
+.button-group button:first-child {
+  border-radius: 1vw 0 0 1vw;
+}
+
+.button-group button:last-child {
+  border-right: 0.27vw solid #e5e5e5;
+  border-radius: 0 1vw 1vw 0;
+}
+
+.button-group button.active {
+  color: #666;
+  background-color: #e1e1e1;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table tr {
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 12vw;
+}
+
+.history-table .col1 {
+  padding-left: 4vw;
+  text-align: left
+}
+
+.history-table .col2, .history-table .col3, .history-table .col4 {
+  text-align: center
+}
+
+.history-table .col4 {
+  padding-right: 4vw;
+}
+
+.view-more {
+  padding: 4vw;
+  text-align: center;
+  color: #00a4f5;
+}
+
+.i-card {
+  margin-bottom: 2.67vw;
+  border: 1px solid #e1e1e1;
+  border-left: none;
+  border-right: none;
+  background-color: #fff;
+}
+
+.up-color {
+  color: #ff4421;
+}
+
+.up-color .value-operator::after {
+  content: '+';
+}
+
+.down-color {
+  color: #07a168;
+}
+
+.down-color .value-operator::after {
+  content: '-';
+}
+
+.fund-summary {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 6.4vw 4vw 0;
+}
+
+.summary-item .title {
+  color: #a3a3a3;
+  font-size: 3.2vw;
+}
+
+.fund-summary .item-value {
+  font-size: 6.4vw;
+}
+
+.item-value.large {
+  font-size: 8.53vw;
+}
+
+.update-time {
+  padding: 1vw 4vw 2.4vw;
+  color: #ccc;
+  text-align: right;
+  font-size: 3.2vw;
+}
+
+.fund-type-summary {
+  padding: 2.4vw 4vw;
+  border-top: 1px solid #e1e1e1;
+  color: #999;
+  font-size: 3.2vw;
+}
+
+.summary-item .xs {
+  font-size: 3.2vw;
+}
+
+.fund-type:before {
+  content: '\2022';
+  margin: 0 8px;
+}
+
+.history-summary {
+  padding: 0 4vw;
+}
+
+.history-summary > header {
+  margin-top: 2.7vw;
+  border-top: 1px solid #e5e5e5;
+}
+
+.history-summary h3 {
+  margin: -2.7vw auto 0;
+  width: 32vw;
+  background: #fff;
+  text-align: center;
+  font-size: 3.74vw;
+}
+
+.history-summary > section {
+  display: flex;
+  padding: 3.6vw 0;
+}
+
+.history-summary .summary-item {
+  flex: 1;
+}
+
+.history-summary .item-value {
+  text-align: center;
+}
+
+.history-summary .title {
+  text-align: center;
+}
+
+.consult > header {
+  display: flex;
+  padding: 4vw;
+}
+
+.consult h2 {
+  font-size: 3.74vw;
+  font-weight: normal;
+}
+
+.consult > header > span {
+  flex: 1;
+  text-align: right;
+  color: #a3a3a3;
+}
+
+.q-and-a {
+  padding: 4vw;
+  border-top: 1px solid #e5e5e5;
+  line-height: 5.87vw;
+  overflow: hidden;
+}
+
+.q-and-a dt {
+  display: flex;
+  padding-top: 4vw;
+  border-top: 1px solid #e5e5e5;
+}
+
+.q-and-a dt:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.q-and-a dd {
+  display: flex;
+  margin-top: 2.67vw;
+  padding-bottom: 4vw;
+  color: #a3a3a3;
+}
+
+.q-and-a dd > div {
+  flex: 1;
+}
+
+i.q, i.a {
+  box-sizing: border-box;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 0.5vw;
+  margin-right: 2.67vw;
+  width: 4.8vw;
+  height: 4.8vw;
+  color: #FDB44D;
+  border: 0.27vw solid currentColor;
+  font-size: 3.2vw;
+  font-style: normal;
+  text-align: center;
+  line-height: 4.27vw;
+}
+
+i.a {
+  color: #168055;
+}
+
+.answer-time {
+  text-align: right;
+  color: #ccc;
+}
+
+.risk-icon {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1px 0 0 1px;
+  background: #B6BAC2;
+  text-align: center;
+  border-radius: 0.8vw;
+  vertical-align: text-bottom;
+}
+
+.risk-icon svg{
+  width: 3.6vw;
+  height: 3.6vw;
+  vertical-align: bottom;
+}
+
+.net-val {
+  color: #ccc;
+}
+
+.no-content {
+  visibility: hidden;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 100%;
+  background: #f5f5f5;
+  transition: transform 1s;
+}
+
+.no-content.show {
+  visibility: visible;
+  transform: translateY(-100%);
+}
+
+.no-content div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16em;
+  background: url('images/undercarriage.png') top center no-repeat;
+  background-size: 150px 150px;
+  padding-top: 170px;
+  text-align: center;
+
+  transform: translate(-50%, -50%);
+}
+
+.bottom-bar {
+  visibility: hidden;
+  position: fixed;
+  bottom: 2vw;
+  left: 50%;
+  padding: 1vw;
+  width: 80vw;
+  border-radius: 2.13vw;
+  background: #fb6138;
+  color: #fff;
+  font-size: 3.2vw;
+  transform: translateX(-50%);
+  transition: visibility 0s linear 0.5s, opacity 1s;
+  opacity: 0;
+}
+
+.bottom-bar.show {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.original-rate {
+  text-decoration: line-through;
+}
+
+.bottom-bar .bottom-details {
+  display: none;
+  padding: 3vw 0;
+  line-height: 1.5em;
+}
+
+.money-fund {
+  display: none;
+}
+
+.money-fund-container .money-fund {
+  display: flex;
+}
+
+.money-fund-container .normal-fund {
+  display: none;
+}
+
+.money-fund-title {
+  padding: 3vw 4vw 0;
+}

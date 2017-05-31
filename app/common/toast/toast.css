@@ -1,0 +1,14 @@
+.i-toast {
+  display: none;
+  position: fixed;
+  bottom: 20vw;
+  left: 50%;
+  transform: translate(-50%, 0) translateZ(700px);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  line-height: 1.4rem;
+  z-index: 700;
+}

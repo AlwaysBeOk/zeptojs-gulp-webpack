@@ -1,0 +1,114 @@
+html,body {
+  height: 100%;
+}
+i,s,a{
+  font-style: normal;
+  text-decoration: none;
+}
+.realized-income{
+  height: 36px;
+  line-height: 20px;
+  font-size: 14px;
+  padding:8px 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.realized-income ._left{
+  float:left;
+  color:#999999;
+}
+.realized-income ._right{
+  float: right;
+  color: #38ADFF;
+}
+
+/*模板样式*/
+.payrolls-list{
+  min-height:100% ;
+  background-color: #EFEFF4;
+  padding: 0 20px;
+}
+.payrolls-list .list-item:nth-child(1){
+  transform:translateY(50%);
+  opacity: 0;
+  animation:animate 0.8s forwards;
+  -webkit-animation:animate 0.8s forwards;
+}
+.payrolls-list .list-item:nth-child(2){
+  transform:translateY(50%);
+  opacity: 0;
+  animation:animate 0.6s 0.8s forwards;
+  -webkit-animation:animate 0.6s 0.8s forwards;
+}
+.payrolls-list .list-item:nth-child(3){
+  transform:translateY(50%);
+  opacity: 0;
+  animation:animate 0.5s 1.4s forwards;
+  -webkit-animation:animate 0.5s 1.4s forwards;
+}
+@keyframes animate {
+  0%{transform:translateY(50%);opacity: 0}
+  100%{transform:translateY(0); opacity: 1}
+}
+@-webkit-keyframes animate {
+  0%{transform:translateY(50%); opacity: 0}
+  100%{transform:translateY(0); opacity: 1}
+}
+
+.payrolls-list .list-item .time{
+  color:#999999;
+  font-size: 12px;
+  padding:  20px 0 10px 0;
+  text-align: center;
+}
+.payrolls-list .list-item .title{
+  background-color: #38ADFF;
+  height: 44px;
+  padding: 11px 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+  border-radius: 4px 4px 0 0;
+}
+.list-item .title a{
+  color: white;
+}
+.list-item .title span{
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  transform: rotate(45deg);
+  border-top:2px solid white;
+  border-right: 2px solid white;
+  overflow: hidden;
+  float: right;
+  margin-top: 4px;
+}
+.list-item .payrolls-info{
+  background-color: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  padding: 0 10px;
+  border-radius: 0 0 4px 4px;
+}
+.payrolls-info .info{
+  padding: 20px 0 10px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999999;
+}
+.payrolls-info .money{
+  height: 45px;
+  line-height: 45px;
+  font-size: 32px;
+  text-align: center;
+  color: #38ADFF;
+}
+.payrolls-info .remind{
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+  color:#999999;
+  border-top:1px dashed #EFEFF4;
+  margin-top: 10px;
+}

@@ -1,0 +1,14 @@
+.details-icon{
+  height: 56px;
+  width: 56px;
+  background: url('./images/icon_auth_f.png');
+  margin: 30vh auto 5vh;
+}
+.details-info{
+  line-height: 25px;
+  font-size: 18px;
+  padding:0 15vw;
+  text-align: center;
+  color:#222222;
+  font-family: sans-serif;
+}

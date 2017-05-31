@@ -1,0 +1,57 @@
+.icon{
+  height: 56px;
+  width: 156px;
+  margin:30% auto 0;
+}
+.icon .icon-left{
+  height: 56px;
+  width: 56px;
+  background: url('./images/icon_auth.png');
+  float: left;
+}
+.icon .icon-center{
+  width: 44px;
+  height: 56px;
+  line-height: 56px;
+  color: #38ADFF;
+  float: left;
+  font-size: 14px;
+}
+.icon .icon-right{
+  height: 56px;
+  width: 56px;
+  background: url('./images/icon_auth_f.png');
+  opacity: 1;
+  float: left;
+}
+.info{
+  height: 80px;
+  font-size: 18px;
+  line-height: 80px;
+  text-align: center;
+}
+.info span{
+  color:#38ADFF;
+}
+.button{
+  padding: 10% 15px 10% 15px;
+}
+.button .btn-agree{
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background-color: #38ADFF;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.button .btn-refuse{
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border: 1px solid #FFAD2C;
+  border-radius: 6px;
+  color: #FFAD2C;
+  font-size: 16px;
+}

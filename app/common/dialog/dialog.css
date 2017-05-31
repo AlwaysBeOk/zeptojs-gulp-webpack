@@ -1,0 +1,64 @@
+.i-modal-layer {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 500;
+  transform: translateZ(500px);
+}
+
+.i-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 70vw;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  color: #000;
+  background: #fff;
+}
+
+.i-dialog-cnt {
+  padding: 20px;
+}
+
+.i-dialog-title {
+  font-size: 1.0625rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.i-dialog-content {
+  font-size: 0.8125rem;
+  margin: 20px 0;
+  color: #666666;
+  text-align: center;
+}
+
+.i-dialog-button-bar {
+  display: flex;
+  border-top: 1px solid #cdcdcd;
+}
+
+.i-dialog-button-bar button {
+  flex: 1;
+  padding: 10px;
+  font-size: 1.0625rem;
+  border: none;
+  border-right: 1px solid #cdcdcd;
+  border-bottom-left-radius: 10px;
+  color: #197dfa;
+  background: transparent;
+}
+
+.i-dialog-button-bar button:active {
+  background-color: #cdcdcd;
+}
+
+.i-dialog-button-bar button:last-child {
+  border-right: none;
+  border-bottom-right-radius: 10px;
+}

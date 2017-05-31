@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "block-no-empty": true,
+    "block-no-single-line": true,
+    "color-no-invalid-hex": true,
+    "comment-empty-line-before": [ "always", {
+      "ignore": ["stylelint-commands", "between-comments"]
+    } ],
+    "declaration-colon-space-after": "always",
+    "declaration-block-no-duplicate-properties": true,
+    "indentation": 2,
+    "length-zero-no-unit": true,
+    "max-empty-lines": 2,
+    "selector-class-pattern": "^[a-z\\-\\d]+$"
+  }
+}

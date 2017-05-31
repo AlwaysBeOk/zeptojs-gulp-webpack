@@ -1,0 +1,23 @@
+<table class="history-table">
+  <thead>
+  <tr>
+    <td class="col1">日期</td>
+    <td class="col2">单位净值</td>
+    <td class="col3">累计净值</td>
+    <td class="col4">日涨幅</td>
+  </tr>
+  </thead>
+  <tbody>
+  {{~it.groups :item :index}}
+  <tr>
+    <td class="col1">{{= item.fundDate }}</td>
+    <td class="col2">{{= (item.fundNetValue - 0).toFixed(4)}}</td>
+    <td class="col3">{{= (item.fundTotalNav - 0).toFixed(4)}}</td>
+    <td class="col4 {{= item.fundDayInc > 0 ? 'up-color' : (item.fundDayInc < 0 ? 'down-color' : '')}}">
+      <span class="value-operator"></span>{{= item.fundDayInc == undefined ? '--' : Math.abs(item.fundDayInc).toFixed(2) }}%
+    </td>
+  </tr>
+  {{~}}
+  </tbody>
+</table>
+<div class="view-more" id="historyButton">查看更多</div>

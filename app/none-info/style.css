@@ -1,0 +1,19 @@
+.main-img{
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 56px;
+  width: 56px;
+  -webkit-background-size:56px 56px;
+  background-size:56px 56px;
+  background:url("./images/none-info.png");
+}
+.main-info{
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+.detail-info{
+  text-align: center;
+  font-size: 14px;
+  color: #888888;
+}

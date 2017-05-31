@@ -1,0 +1,13 @@
+<div class="i-modal-layer">
+  <div class="i-dialog">
+    <div class="i-dialog-cnt">
+      {{?it.title}}<div class="i-dialog-title">{{=it.title}}</div>{{?}}
+      {{?it.content}}<div class="i-dialog-content">{{=it.content}}</div>{{?}}
+    </div>
+    <div class="i-dialog-button-bar">
+      {{~it.buttons :button :index}}
+      <button type="button" class="dialog-button" data-index="{{=index}}">{{=button.text}}</button>
+      {{~}}
+    </div>
+  </div>
+</div>
